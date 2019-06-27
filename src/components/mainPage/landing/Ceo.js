@@ -3,7 +3,7 @@ import React from "react";
 const ceo = () => {
   return (
     <div className="section-ceo">
-      <div className="container-fluid">
+      <div className="container ceo-card">
         <div className="row">
           <div className="col-md-6 ceo-desc">
             <div className="container">

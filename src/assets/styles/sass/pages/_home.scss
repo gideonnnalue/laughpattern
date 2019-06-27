@@ -16,8 +16,8 @@
 }
 
 .section-about {
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   padding: 10rem 3rem;
 
   p {
@@ -134,7 +134,7 @@
 }
 
 .section-overview {
-        font-family: "Lato", sans-serif;
+        font-family: "Poppins", sans-serif;
         background: linear-gradient(to right, rgba(#fd0101, 0.8), rgba(#fd0101, 0.8)), url(../../images/img.jpg);
         background-position: center;
         background-size: cover;
@@ -151,6 +151,14 @@
 }
 
 .section-ceo {
+    font-family: "Poppins", sans-serif;
+    margin-top: -2.5rem;
+    overflow: hidden;
+
+    .ceo-card {
+        border-radius: 20px;
+
+    }
 
     .ceo-desc {
         background-color: #ffc107;
@@ -163,10 +171,16 @@
 
     .ceo-image {
         width: 100%;
-        height: 600px;
+        height: 500px;
         background: url(../../images/img.jpg);
         background-size: cover;
         background-position: center;
 
     }
+}
+
+.section-latest-videos {
+    font-family: "Poppins", sans-serif;
+    padding: 3rem;
+    margin-top: 3rem;
 }
