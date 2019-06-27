@@ -4,6 +4,7 @@ import Info from "./Info";
 import About from "./About";
 import Services from "./Services";
 import Overview from "./Overiew";
+import Ceo from "./Ceo";
 
 class Landing extends Component {
   render() {
@@ -14,6 +15,7 @@ class Landing extends Component {
         <About />
         <Services />
         <Overview />
+        <Ceo />
       </div>
     );
   }
