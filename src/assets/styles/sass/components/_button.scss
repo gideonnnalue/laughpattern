@@ -1,0 +1,18 @@
+.button {
+    font-family: "Poppins", sans-serif;
+
+    &-large {
+        padding: 10px 40px;
+        border: 2px solid $color-white;
+        background-color: transparent;
+        color: $color-white;
+        border-radius: 100px;
+        transition: all .3s ease-in;
+        font-size: 1.6rem;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }
+}

@@ -1,0 +1,150 @@
+.section-info {
+  background-color: #fd0101;
+  // margin-top: -5rem !important;
+  padding: 3rem;
+  color: $color-white;
+  font-family: "Poppins", sans-serif;
+
+  p {
+    font-size: 1.6rem;
+    opacity: 0.8;
+  }
+
+  .info-icons {
+    font-size: 36px;
+  }
+}
+
+.section-about {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  padding: 10rem 3rem;
+
+  p {
+    font-size: 2rem;
+    color: $color-grey-dark-3;
+    // text-align: justify;
+    word-spacing: 1px;
+    line-height: 2.2rem;
+    margin-top: 1.8rem;
+  }
+
+
+  .about-images {
+    //   margin: 50px;
+    position: relative;
+
+    .about-image {
+      position: absolute;
+      box-shadow: 3px 10px 20px rgba($color-black, 0.2);
+      margin: 70px 0;
+      backface-visibility: hidden;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    .image-1 {
+      top: 0;
+      left: 50px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        z-index: 1;
+        transform: scale(1.2);
+        cursor: pointer;
+        border: 10px solid #fd0101;
+      }
+    }
+
+    .image-2 {
+      top: 30px;
+      right: 30px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        z-index: 1;
+        transform: scale(1.2);
+        cursor: pointer;
+        border: 10px solid #fd0101;
+      }
+    }
+
+    .image-3 {
+      bottom: 0;
+      left: 100px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        z-index: 1;
+        transform: scale(1.2);
+        cursor: pointer;
+        border: 10px solid #fd0101;
+      }
+    }
+  }
+}
+
+.section-services {
+    font-family: "Poppins", sans-serif;
+  padding: 3rem;
+  margin-top: 3rem;
+  background-color: $color-grey-light-2;
+
+  .service-slider {
+      margin-top: 8rem;
+      margin-bottom: 5rem;
+  }
+
+  .service-info {
+      display: flex !important;
+      flex-direction: row;
+      align-items: flex-start;
+
+      &-item {
+          
+      }
+
+      .service-icon {
+          font-size: 4rem;
+            
+        
+      }
+
+      .service-desc {
+          width: 80%;
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+
+          h4 {
+              font-size: 2rem;
+              font-weight: 700;
+              color: #404044;
+          }
+
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+          }
+          
+      }
+  }
+  
+}
+
+.section-overview {
+        font-family: "Lato", sans-serif;
+        background: linear-gradient(to right, rgba(#fd0101, 0.8), rgba(#fd0101, 0.8)), url(../../images/img.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 5rem;
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: $default-font-size;
+    }
+}

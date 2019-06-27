@@ -1,0 +1,43 @@
+.carousel {
+  &__wrapper {
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  &__images {
+    width: 100vw;
+    height: 80vh;
+    background-size: cover !important;
+    background-position: center !important;
+    overflow: hidden;
+    
+  }
+
+  &__logo {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    // margin: 0 auto;
+
+    img {
+      width: 300px;
+    //   margin: auto;
+    }
+  }
+
+  &__heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    font-weight: 400;
+    // text-shadow: 3px 3px 0 rgb(238, 255, 2);
+  }
+
+  &__paragraph {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    max-width: 70rem;
+  }
+  
+}
