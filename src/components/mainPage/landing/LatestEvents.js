@@ -1,45 +1,39 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Service from "../../utils/Service";
+import LatestEventCard from "../../utils/LatestEventCard";
 
-class Services extends Component {
+class LatestEvents extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      services: [
+      events: [
         {
-          icon: "fas fa-mobile-alt",
-          heading: "Dj Services",
+          title: "Laugh Pattern",
           desc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit autem officia ut debitis a."
         },
         {
-          icon: "fas fa-mobile-alt",
-          heading: "Dj Services",
+          title: "Pool Party",
           desc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit autem officia ut debitis a."
         },
         {
-          icon: "fas fa-mobile-alt",
-          heading: "Dj Services",
+          title: "Eat and join",
           desc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit autem officia ut debitis a."
         },
         {
-          icon: "fas fa-mobile-alt",
-          heading: "Dj Services",
+          title: "Dj Services",
           desc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit autem officia ut debitis a."
         },
         {
-          icon: "fas fa-mobile-alt",
-          heading: "Dj Services",
+          title: "Dj Services",
           desc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit autem officia ut debitis a."
         },
         {
-          icon: "fas fa-mobile-alt",
-          heading: "Dj Services",
+          title: "Dj Services",
           desc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit autem officia ut debitis a."
         }
@@ -82,27 +76,29 @@ class Services extends Component {
         }
       ]
     };
-    const { services } = this.state;
 
-    const service = this.state.services.map((service, i) => (
-      <Service
+    const { events } = this.state;
+
+    const event = this.state.events.map((event, i) => (
+      <LatestEventCard
         key={i}
-        icon={service.icon}
-        heading={service.heading}
-        desc={service.desc}
+        title={events[i].title}
+        desc={events[i].desc}
       />
     ));
     return (
-      <div className="section-services">
+      <div className="section-latest-events">
         <div className="container">
-          <h3 className="heading heading-primary my-5">Services</h3>
-          <div className="service-slider">
-            <Slider {...settings}>{service}</Slider>
-          </div>
+          <h3 className="heading heading-primary my-5">Latest Events</h3>
+            <div className="service-slider">
+              <Slider {...settings}>
+                {event}
+              </Slider>
+            </div>
         </div>
       </div>
     );
   }
 }
 
-export default Services;
+export default LatestEvents;

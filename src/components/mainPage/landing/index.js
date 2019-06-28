@@ -6,6 +6,8 @@ import Services from "./Services";
 import Overview from "./Overiew";
 import Ceo from "./Ceo";
 import LatestVideos from "./LatestVideos";
+import LatestEvents from "./LatestEvents";
+import Booking from "./Booking";
 
 class Landing extends Component {
   render() {
@@ -18,6 +20,8 @@ class Landing extends Component {
         <Overview />
         <Ceo />
         <LatestVideos />
+        <LatestEvents />
+        <Booking />
       </div>
     );
   }
