@@ -32,15 +32,23 @@
   .about-images {
     //   margin: 50px;
     position: relative;
+    width: 100%;
+    @include respond(phone) {
+      display: none;
+    }
 
     .about-image {
       position: absolute;
       box-shadow: 3px 10px 20px rgba($color-black, 0.2);
       margin: 70px 0;
       backface-visibility: hidden;
+      
 
       img {
         width: 300px;
+        @include respond(phone) {
+          width: 200px;
+        }
       }
     }
 
@@ -152,6 +160,8 @@
 
   .ceo-card {
     border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba($color-black, 0.8);
+
   }
 
   .ceo-desc {

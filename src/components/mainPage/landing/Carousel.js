@@ -102,8 +102,8 @@ const Carousel = () => {
             <div className="carousel__logo pt-5">
               <div className="container pt-5">
                 <div className="row pt-5">
-                  <div className="col text-white text-left carousel__content pt-5">
-                    <img src={logo} alt="" />
+                  <div className="col text-white text-left carousel__content text-center">
+                    {/* <img src={logo} alt="" /> */}
                     <h1 className="carousel__heading">This is Laugh Pattern</h1>
                     <p className="carousel__paragraph mb-5">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -129,8 +129,8 @@ const Carousel = () => {
             <div className="carousel__logo pt-5">
               <div className="container pt-5">
                 <div className="row pt-5">
-                  <div className="col text-white text-left carousel__content pt-5">
-                    <img src={logo} alt="" />
+                  <div className="col text-white text-left carousel__content text-center">
+                    {/* <img src={logo} alt="" /> */}
                     <h1 className="carousel__heading">Touching Lives</h1>
                     <p className="carousel__paragraph mb-5">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -157,8 +157,8 @@ const Carousel = () => {
             <div className="carousel__logo pt-5">
               <div className="container pt-5">
                 <div className="row pt-5">
-                  <div className="col text-white text-left carousel__content pt-5">
-                    <img src={logo} alt="" />
+                  <div className="col text-white text-left carousel__content text-center">
+                    {/* <img src={logo} alt="" /> */}
                     <h1 className="carousel__heading">Touching Lives</h1>
                     <p className="carousel__paragraph mb-5">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.

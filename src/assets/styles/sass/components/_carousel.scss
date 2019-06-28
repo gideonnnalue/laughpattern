@@ -11,6 +11,7 @@
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important;
+    background-repeat: no-repeat;
     overflow: hidden;
     
   }
@@ -22,13 +23,13 @@
     // margin: 0 auto;
 
     img {
-      width: 300px;
+      width: 200px;
     //   margin: auto;
     }
   }
 
   &__heading {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Poppins", sans-serif;
     font-size: 6rem;
     font-weight: 400;
     // text-shadow: 3px 3px 0 rgb(238, 255, 2);
