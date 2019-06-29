@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import CarouselHeader from '../../utils/CarouselHeader';
 
-import slide_one from "../../../assets/images/carousel1.jpg";
+import slide_one from "../../../assets/images/carousel11.jpg";
 import slide_two from "../../../assets/images/carousel2.jpg";
 import slide_three from "../../../assets/images/img.jpg";
 import logo from "../../../assets/images/lpn-large.png";
@@ -48,8 +48,8 @@ class Carousel extends Component {
     this.state = {
       items: [
         {img: slide_one, heading: "This is Laugh Pattern", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusantium perspiciatis voluptates expedita provident temporibus dolor voluptas iste."},
-        {img: slide_one, heading: "This is Laugh Pattern", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusantium perspiciatis voluptates expedita provident temporibus dolor voluptas iste."},
-        {img: slide_one, heading: "This is Laugh Pattern", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusantium perspiciatis voluptates expedita provident temporibus dolor voluptas iste."}
+        {img: slide_two, heading: "We Entertain", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusantium perspiciatis voluptates expedita provident temporibus dolor voluptas iste."},
+        {img: slide_one, heading: "We innovate", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusantium perspiciatis voluptates expedita provident temporibus dolor voluptas iste."}
       ]
     }
   }

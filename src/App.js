@@ -28,6 +28,25 @@ class App extends Component {
     this.turnOffNav = this.turnOffNav.bind(this);
   }
 
+  componentDidMount(){
+    
+    this.authenticate().then(() => {
+      const ele = document.getElementById('ipl-progress-indicator');
+      if(ele){
+        // fade out
+        ele.classList.add('available')
+        setTimeout(() => {
+          // remove from DOM
+          ele.outerHTML = ''
+        }, 2000)
+      }
+    })
+  }
+
+  authenticate(){
+    return new Promise(resolve => setTimeout(resolve, 2000))
+  }
+
   showNav() {
     this.setState({ navShow: !this.state.navShow });
   }

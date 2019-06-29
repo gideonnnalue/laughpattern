@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import img1 from "../../../assets/images/carousel1.jpg";
+import img1 from "../../../assets/images/carousel11.jpg";
 import img2 from "../../../assets/images/carousel2.jpg";
-import img3 from "../../../assets/images/carousel1.jpg";
+import img3 from "../../../assets/images/img.jpg";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
 
