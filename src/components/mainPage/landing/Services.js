@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Service from "../../utils/Service";
+import Flip from "react-reveal/Flip";
 
 class Services extends Component {
   constructor(props) {
@@ -95,7 +96,11 @@ class Services extends Component {
     return (
       <div className="section-services">
         <div className="container">
-          <h3 className="heading heading-primary my-5">Services</h3>
+          <h3 className="heading heading-primary my-5">
+            <Flip bottom cascade>
+              Services
+            </Flip>
+          </h3>
           <div className="service-slider">
             <Slider {...settings}>{service}</Slider>
           </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import LatestEventCard from "../../utils/LatestEventCard";
 
@@ -80,21 +81,18 @@ class LatestEvents extends Component {
     const { events } = this.state;
 
     const event = this.state.events.map((event, i) => (
-      <LatestEventCard
-        key={i}
-        title={events[i].title}
-        desc={events[i].desc}
-      />
+      <LatestEventCard key={i} title={events[i].title} desc={events[i].desc} />
     ));
     return (
       <div className="section-latest-events">
         <div className="container">
           <h3 className="heading heading-primary my-5">Latest Events</h3>
-            <div className="service-slider">
-              <Slider {...settings}>
-                {event}
-              </Slider>
-            </div>
+          <div className="service-slider text-center">
+            <Slider {...settings}>{event}</Slider>
+            <Link to="/" class="btns btns--white btns--animated my-5">
+              More Events
+            </Link>
+          </div>
         </div>
       </div>
     );

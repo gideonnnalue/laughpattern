@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import Fade from 'react-reveal/Fade';
 
 class Info extends Component {
   render() {
     return (
       <div className="section-info">
         <div className="container">
+        <Fade bottom opposite cascade duration={1000} delay={500}>
           <div className="row">
             <div className="col-lg-3 col-md-6 text-center">
               <span className="info-icons">
@@ -35,6 +37,7 @@ class Info extends Component {
               <p>info@domain.com <br/>luto@email.com</p>
             </div>
           </div>
+          </Fade>
         </div>
       </div>
     );

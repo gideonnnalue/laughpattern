@@ -1,4 +1,6 @@
 import React from "react";
+import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
 
 const ceo = () => {
   return (
@@ -15,19 +17,24 @@ const ceo = () => {
                       fontSize: "24px"
                     }}
                   >
-                    Meet the CEO
+                    <Flip bottom cascade>
+                      Meet the CEO
+                    </Flip>
                   </h3>
+                  <Fade bottom>
                   <p className="text-white mt-5">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Excepturi ducimus quaerat nulla nemo nisi, voluptatum libero
                     tenetur iste earum magnam incidunt laborum assumenda iusto,
                     sequi ipsam unde dignissimos exercitationem
                     harum!Repudiandae rerum cumque veniam alias? Excepturi iusto
-                    voluptates temporibus aut ex! Error blanditiis consectetur <br /> <br /> 
+                    voluptates temporibus aut ex! Error blanditiis consectetur{" "}
+                    <br /> <br />
                     ipsam cumque sapiente, accusamus sunt corporis nesciunt
                     magnam, rerum, tenetur dolorum adipisci alias voluptas totam
                     iusto.
                   </p>
+                  </Fade>
                 </div>
               </div>
             </div>

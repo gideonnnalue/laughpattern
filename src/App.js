@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import $ from "jquery";
 import Popper from "popper.js";
@@ -11,10 +13,12 @@ import Landing from "./components/mainPage/landing";
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <Landing />
-    </div>
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Route exact path="/" component={Landing} />
+      </div>
+    </Router>
   );
 }
 

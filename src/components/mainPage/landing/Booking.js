@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import InputTextGroup from "../../utils/InputTextGroup";
 import InputTextAreaGroup from "../../utils/InputTextAreaGroup";
 
@@ -46,6 +47,7 @@ class Booking extends Component {
                 <div class="form-group">
                   <InputTextAreaGroup id="message" placeholder="Message"/>
                 </div>
+                <input type="button" className="btns btns--red btns--forms btns--animated my-5 mx-auto w-100" value="Submit"/>
               </form>
             </div>
           </div>

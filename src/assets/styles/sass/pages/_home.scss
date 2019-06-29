@@ -1,5 +1,5 @@
 .section-info {
-  background-color: #fd0101;
+  background-color: $color-primary;
   // margin-top: -5rem !important;
   padding: 3rem;
   color: $color-white;
@@ -61,7 +61,7 @@
         z-index: 1;
         transform: scale(1.2);
         cursor: pointer;
-        border: 10px solid #fd0101;
+        border: 10px solid $color-primary;
       }
     }
 
@@ -74,7 +74,7 @@
         z-index: 1;
         transform: scale(1.2);
         cursor: pointer;
-        border: 10px solid #fd0101;
+        border: 10px solid $color-primary;
       }
     }
 
@@ -87,7 +87,7 @@
         z-index: 1;
         transform: scale(1.2);
         cursor: pointer;
-        border: 10px solid #fd0101;
+        border: 10px solid $color-primary;
       }
     }
   }
@@ -137,7 +137,7 @@
 
 .section-overview {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, rgba(#fd0101, 0.8), rgba(#fd0101, 0.8)),
+  background: linear-gradient(to right, rgba($color-primary, 0.8), rgba($color-primary, 0.8)),
     url(../../images/img.jpg);
   background-position: center;
   background-size: cover;
@@ -160,7 +160,7 @@
 
   .ceo-card {
     border-radius: 20px;
-    box-shadow: 2px 3px 5px rgba($color-black, 0.8);
+    box-shadow: 0 0 10px rgba($color-black, 0.3);
 
   }
 
@@ -189,7 +189,7 @@
 
 .section-latest-events {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, rgba(#06359b, 0.8), rgba(#06359b, 0.8)),
+  background: linear-gradient(to right, rgba($color-tetiary, 0.8), rgba($color-tetiary, 0.8)),
     url(../../images/img.jpg);
   background-position: center;
   background-size: cover;
@@ -206,5 +206,9 @@
   .booking-form {
     max-width: 768px;
     width: 100%;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 }

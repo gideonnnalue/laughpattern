@@ -1,9 +1,9 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const InputTextGroup = props => {
   return (
     <div>
-      {/* <label for={props.id} className="input-label">{props.label}</label> */}
 
       <input
         type={props.type}
@@ -14,5 +14,11 @@ const InputTextGroup = props => {
     </div>
   );
 };
+
+InputTextGroup.propTypes = {
+    type: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    placeholder: PropTypes.string.isRequired,
+}
 
 export default InputTextGroup;

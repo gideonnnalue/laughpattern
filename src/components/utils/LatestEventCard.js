@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import img from '../../assets/images/img.jpg';
 
 class LatestEventCard extends Component {
   render() {
     return (
-      <div class="card latest-event-card" style={{width: "28rem"}}>
+      <div class="card latest-event-card text-left" style={{width: "28rem"}}>
         <img src={img} className="card-img-top" alt="..." />
         <div className="card-body latest-event-card-body">
           <h5 className="card-title latest-event-card-title">Card title</h5>
@@ -12,9 +13,9 @@ class LatestEventCard extends Component {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" className="button-small">
+          <Link to="/" className="btns-text">
             Read more
-          </a>
+          </Link>
         </div>
       </div>
     );
