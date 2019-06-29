@@ -29,9 +29,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    
-    this.authenticate().then(() => {
-      const ele = document.getElementById('ipl-progress-indicator');
+    const ele = document.getElementById('ipl-progress-indicator');
       if(ele){
         // fade out
         ele.classList.add('available')
@@ -40,7 +38,17 @@ class App extends Component {
           ele.outerHTML = ''
         }, 2000)
       }
-    })
+    // this.authenticate().then(() => {
+    //   const ele = document.getElementById('ipl-progress-indicator');
+    //   if(ele){
+    //     // fade out
+    //     ele.classList.add('available')
+    //     setTimeout(() => {
+    //       // remove from DOM
+    //       ele.outerHTML = ''
+    //     }, 2000)
+    //   }
+    // })
   }
 
   authenticate(){
