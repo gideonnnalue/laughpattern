@@ -1,13 +1,27 @@
-.section-header {
+.section-about-ceo {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(
-      to right,
-      rgba($color-tetiary, 0.8),
-      rgba($color-tetiary, 0.8)
-    ),
-    url(../../images/img.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 5rem;
-  background-attachment: fixed;
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+
+  .about-ceo-text {
+    @include respond(phone) {
+      margin-top: 5rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+.section-about-company {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 5rem;
+  p {
+    font-size: 1.8rem;
+  }
+
 }

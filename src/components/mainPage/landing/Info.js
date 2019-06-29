@@ -17,21 +17,21 @@ class Info extends Component {
             </div>
             <div className="col-lg-3 col-md-6 text-center">
               <span className="info-icons">
-                <i class="far fa-clock" />
+                <i className="far fa-clock" />
               </span>
               <h3>Opening Time</h3>
               <p>Monday - Sunday <br/>8am - 9pm</p>
             </div>
             <div className="col-lg-3 col-md-6 text-center">
               <span className="info-icons">
-                <i class="fas fa-mobile-alt" />
+                <i className="fas fa-mobile-alt" />
               </span>
               <h3>Phone</h3>
               <p>+ 001 234 567 <br/>+ 001 234 567</p>
             </div>
             <div className="col-lg-3 col-md-6 text-center">
               <span className="info-icons">
-                <i class="far fa-envelope" />
+                <i className="far fa-envelope" />
               </span>
               <h3>Email</h3>
               <p>info@domain.com <br/>luto@email.com</p>

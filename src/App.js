@@ -9,8 +9,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./assets/styles/sass/styles.scss";
 import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 import Landing from "./components/mainPage/landing";
 import About from "./components/mainPage/about";
+import Events from "./components/mainPage/events";
+import NewsFeed from "./components/mainPage/newsfeed";
+import Videos from "./components/mainPage/videos";
+import Members from "./components/mainPage/members";
 
 class App extends Component {
   constructor(props) {
@@ -45,8 +50,25 @@ class App extends Component {
             path="/about"
             render={routeProps => <About {...routeProps} turnOffNav={this.turnOffNav} />}
           />
+          <Route
+            path="/events"
+            render={routeProps => <Events {...routeProps} turnOffNav={this.turnOffNav} />}
+          />
+          <Route
+            path="/news"
+            render={routeProps => <NewsFeed {...routeProps} turnOffNav={this.turnOffNav} />}
+          />
+          <Route
+            path="/videos"
+            render={routeProps => <Videos {...routeProps} turnOffNav={this.turnOffNav} />}
+          />
+          <Route
+            path="/members"
+            render={routeProps => <Members {...routeProps} turnOffNav={this.turnOffNav} />}
+          />
           {/* <Route exact path="/" component={Landing} /> */}
           {/* <Route exact path="/about" component={About} /> */}
+          <Footer />
         </div>
       </Router>
     );

@@ -89,7 +89,7 @@ class LatestEvents extends Component {
           <h3 className="heading heading-primary my-5">Latest Events</h3>
           <div className="service-slider text-center">
             <Slider {...settings}>{event}</Slider>
-            <Link to="/" class="btns btns--white btns--animated my-5">
+            <Link to="/" className="btns btns--white btns--animated my-5">
               More Events
             </Link>
           </div>

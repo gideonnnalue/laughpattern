@@ -29,7 +29,7 @@ const CarouselHeader = (props) => {
                 </p>
                 <Link
                   to="/"
-                  class="btns btns--white btns--animated"
+                  className="btns btns--white btns--animated"
                 >
                   Learn More
                 </Link>

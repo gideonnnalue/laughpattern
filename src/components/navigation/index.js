@@ -31,7 +31,7 @@ class navigation extends Component {
           onClick={this.props.showNav}
         />
 
-        <label for="navi-toggle" className="navigation__button">
+        <label htmlFor="navi-toggle" className="navigation__button">
           <span className="navigation__icon">&nbsp;</span>
         </label>
 
@@ -50,18 +50,23 @@ class navigation extends Component {
               </NavLink>
             </li>
             <li className="navigation__item">
-              <NavLink to="/" className="navigation__link">
-                <span>03 </span>News Feed
+              <NavLink to="/events" className="navigation__link">
+                <span>03 </span>Events
               </NavLink>
             </li>
             <li className="navigation__item">
-              <NavLink to="/" className="navigation__link">
-                <span>04 </span>Videos
+              <NavLink to="/news" className="navigation__link">
+                <span>04 </span>News Feed
               </NavLink>
             </li>
             <li className="navigation__item">
-              <NavLink to="/" className="navigation__link">
-                <span>05 </span>Member
+              <NavLink to="/videos" className="navigation__link">
+                <span>05 </span>Videos
+              </NavLink>
+            </li>
+            <li className="navigation__item">
+              <NavLink to="/members" className="navigation__link">
+                <span>06 </span>Members
               </NavLink>
             </li>
           </ul>

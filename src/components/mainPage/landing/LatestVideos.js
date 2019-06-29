@@ -26,7 +26,7 @@ class LatestVideos extends Component {
             <div className="latest-video d-flex flex-row justify-content-center flex-wrap">
               {latest}
             </div>
-            <Link to="/" class="btns btns--blue btns--animated my-5">
+            <Link to="/" className="btns btns--blue btns--animated my-5">
               More Videos
             </Link>
           </div>

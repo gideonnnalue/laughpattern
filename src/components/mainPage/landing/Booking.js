@@ -44,7 +44,7 @@ class Booking extends Component {
                     />
                   </div>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <InputTextAreaGroup id="message" placeholder="Message"/>
                 </div>
                 <input type="button" className="btns btns--red btns--forms btns--animated my-5 mx-auto w-100" value="Submit"/>

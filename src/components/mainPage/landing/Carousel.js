@@ -103,7 +103,7 @@ class Carousel extends Component {
     };
 
     const items = this.state.items.map((item, i) => (
-      <CarouselHeader image={item.img} heading={item.heading} desc={item.desc} />
+      <CarouselHeader key={i} image={item.img} heading={item.heading} desc={item.desc} />
     ))
     return (
       <div className="carousel__wrapper">
