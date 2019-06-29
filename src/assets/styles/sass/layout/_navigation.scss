@@ -129,11 +129,20 @@
   }
 
   //FUNCTIONALITY
-  &__checkbox:checked ~ &__background {
+  // &__checkbox:checked ~ &__background {
+  //   transform: scale(80);
+  // }
+
+  // &__checkbox:checked ~ &__nav {
+  //   opacity: 1;
+  //   width: 100%;
+  // }
+
+  &__background-show {
     transform: scale(80);
   }
 
-  &__checkbox:checked ~ &__nav {
+  &__nav-show {
     opacity: 1;
     width: 100%;
   }

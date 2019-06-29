@@ -10,6 +10,10 @@ import LatestEvents from "./LatestEvents";
 import Booking from "./Booking";
 
 class Landing extends Component {
+
+  componentDidMount() {
+    this.props.turnOffNav();
+  }
   render() {
     return (
       <div>

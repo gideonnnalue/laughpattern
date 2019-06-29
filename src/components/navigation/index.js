@@ -3,6 +3,18 @@ import { NavLink, Link } from "react-router-dom";
 import logo from "../../assets/images/lpn-large.png";
 
 class navigation extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     navShow: false
+  //   }
+
+  //   this.showNav = this.showNav.bind(this);
+  // }
+
+  // showNav() {
+  //   this.setState({ navShow: !this.state.navShow})
+  // }
   render() {
     return (
       <div className="navigation">
@@ -16,15 +28,16 @@ class navigation extends Component {
           type="checkbox"
           className="navigation__checkbox"
           id="navi-toggle"
+          onClick={this.props.showNav}
         />
 
         <label for="navi-toggle" className="navigation__button">
           <span className="navigation__icon">&nbsp;</span>
         </label>
 
-        <div className="navigation__background">&nbsp;</div>
+        <div className={`navigation__background ${this.props.navShow ? "navigation__background-show" : ""}`}>&nbsp;</div>
 
-        <nav className="navigation__nav">
+        <nav className={`navigation__nav ${this.props.navShow ? "navigation__nav-show" : ""}`}>
           <ul className="navigation__list">
             <li className="navigation__item">
               <NavLink to="/" className="navigation__link">
@@ -32,7 +45,7 @@ class navigation extends Component {
               </NavLink>
             </li>
             <li className="navigation__item">
-              <NavLink to="/" className="navigation__link">
+              <NavLink to="/about" className="navigation__link">
                 <span>02 </span>About
               </NavLink>
             </li>

@@ -83,7 +83,6 @@ class Services extends Component {
         }
       ]
     };
-    const { services } = this.state;
 
     const service = this.state.services.map((service, i) => (
       <Service
