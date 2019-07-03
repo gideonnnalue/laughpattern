@@ -2,4 +2,13 @@
   background-color: #fafcfe;
   font-family: "Poppins", sans-serif;
   padding: 5rem;
+
+  // @include respond(tab-port) {
+  //   padding: 5rem;
+  // }
+
+  @include respond(phone) {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
 }

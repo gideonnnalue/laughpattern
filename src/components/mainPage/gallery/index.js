@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PageHeader from "../../utils/PageHeader";
 import ImageGallery from "./ImageGallery";
+import VideoGallery from "./VideoGallery";
 
 class Gallery extends Component {
 
@@ -13,6 +14,7 @@ class Gallery extends Component {
       <div>
         <PageHeader title="Gallery" />
         <ImageGallery />
+        <VideoGallery />
       </div>
     );
   }

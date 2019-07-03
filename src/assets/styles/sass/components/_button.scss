@@ -84,7 +84,7 @@
 
   &--blue {
     background-color: $color-tetiary;
-    color: $color-white;
+    color: $color-white !important;
 
     &::after {
       background-color: $color-tetiary;
