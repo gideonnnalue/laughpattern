@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 const Overiew = () => {
   return (
-    <div className="section-overview">
+    <section className="section-overview">
       <div className="container">
         <div className="row">
           <div className="col text-center text-white">
@@ -20,7 +20,7 @@ const Overiew = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

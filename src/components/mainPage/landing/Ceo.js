@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const ceo = () => {
   return (
-    <div className="section-ceo">
+    <section className="section-ceo">
       <div className="container ceo-card">
         <div className="row">
           <div className="col-md-6 ceo-desc">
@@ -42,7 +42,7 @@ const ceo = () => {
           <div className="col-md-6 ceo-image" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

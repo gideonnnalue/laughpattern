@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 class Info extends Component {
   render() {
     return (
-      <div className="section-info">
+      <section className="section-info">
         <div className="container">
         <Fade bottom opposite cascade duration={1000} delay={500}>
           <div className="row">
@@ -39,7 +39,7 @@ class Info extends Component {
           </div>
           </Fade>
         </div>
-      </div>
+      </section>
     );
   }
 }

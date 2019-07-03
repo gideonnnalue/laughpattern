@@ -9,16 +9,16 @@ class LatestVideos extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videos: [1, 2, 3, 4]
+      videos: ["565x565", "563x563", "568x568", "562x562"]
     };
   }
   render() {
     const latest = this.state.videos.map(video => (
-      <LatestVideoCard img={img} key={video} />
+      <LatestVideoCard img={`https://source.unsplash.com/random/${video}`} key={video} />
     ));
 
     return (
-      <div className="section-latest-videos">
+      <section className="section-latest-videos">
         <div className="container">
           <h3 className="heading heading-primary my-5"><Flip bottom cascade>Latest Videos</Flip></h3>
           <Fade left>
@@ -32,7 +32,7 @@ class LatestVideos extends Component {
           </div>
           </Fade>
         </div>
-      </div>
+      </section>
     );
   }
 }

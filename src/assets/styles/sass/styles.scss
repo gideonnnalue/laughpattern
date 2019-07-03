@@ -6,13 +6,19 @@
 
 @import './components/button';
 @import './components/carousel';
+@import './components/eventcard';
 @import './components/input';
 @import './components//latestevents';
 @import './components/latestvideo';
+@import './components/newsfeedcard';
 @import './components/pagesheader';
+@import './components/tag';
 
 @import './layout/navigation';
 @import './layout/footer';
 
 @import './pages/about';
+@import './pages/events';
+@import './pages/newsfeeds';
 @import './pages/home';
+@import './pages/singleevent';

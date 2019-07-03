@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import PageHeader from "../../utils/PageHeader";
+import AllEvents from './AllEvents';
+import PropTypes from 'prop-types';
 
-class index extends Component {
-  componentDidMount() {
+class Events extends Component {
+
+  componentWillUnmount() {
     this.props.turnOffNav();
   }
 
@@ -10,9 +13,14 @@ class index extends Component {
     return (
       <div>
         <PageHeader title="Events" />
+        <AllEvents />
       </div>
     );
   }
 }
 
-export default index;
+Events.propTypes = {
+  turnOffNav: PropTypes.func
+}
+
+export default Events;

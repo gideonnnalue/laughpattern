@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import PageHeader from "../../utils/PageHeader";
+import Feeds from "./Feeds";
+import PropTypes from 'prop-types';
 
-class index extends Component {
-  componentDidMount() {
+class NewsFeed extends Component {
+
+  componentWillUnmount() {
     this.props.turnOffNav();
   }
 
@@ -10,9 +13,14 @@ class index extends Component {
     return (
       <div>
         <PageHeader title="News Feed" />
+        <Feeds />
       </div>
     );
   }
 }
 
-export default index;
+NewsFeed.propTypes = {
+  turnOffNav: PropTypes.func
+}
+
+export default NewsFeed;

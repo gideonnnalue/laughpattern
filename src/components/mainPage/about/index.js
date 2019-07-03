@@ -4,16 +4,17 @@ import Ceo from "./Ceo";
 import Company from "./Company";
 
 class About extends Component {
-  componentDidMount() {
+  
+  componentWillUnmount() {
     this.props.turnOffNav();
   }
   render() {
     return (
-      <div>
+      <main>
         <PageHeader title="About" />
         <Ceo />
         <Company />
-      </div>
+      </main>
     );
   }
 }

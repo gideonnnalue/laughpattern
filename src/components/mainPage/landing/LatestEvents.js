@@ -84,7 +84,7 @@ class LatestEvents extends Component {
       <LatestEventCard key={i} title={events[i].title} desc={events[i].desc} />
     ));
     return (
-      <div className="section-latest-events">
+      <section className="section-latest-events">
         <div className="container">
           <h3 className="heading heading-primary my-5">Latest Events</h3>
           <div className="service-slider text-center">
@@ -94,7 +94,7 @@ class LatestEvents extends Component {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

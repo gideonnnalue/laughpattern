@@ -14,8 +14,10 @@ import Landing from "./components/mainPage/landing";
 import About from "./components/mainPage/about";
 import Events from "./components/mainPage/events";
 import NewsFeed from "./components/mainPage/newsfeed";
-import Videos from "./components/mainPage/videos";
+import Gallery from "./components/mainPage/gallery";
 import Members from "./components/mainPage/members";
+import SingleEvent from "./components/mainPage/singleEvent";
+import SingleNewsFeed from "./components/mainPage/singleNewsFeed";
 
 class App extends Component {
   constructor(props) {
@@ -28,16 +30,16 @@ class App extends Component {
     this.turnOffNav = this.turnOffNav.bind(this);
   }
 
-  componentDidMount(){
-    const ele = document.getElementById('ipl-progress-indicator');
-      if(ele){
-        // fade out
-        ele.classList.add('available')
-        setTimeout(() => {
-          // remove from DOM
-          ele.outerHTML = ''
-        }, 2000)
-      }
+  componentDidMount() {
+    const ele = document.getElementById("ipl-progress-indicator");
+    if (ele) {
+      // fade out
+      ele.classList.add("available");
+      setTimeout(() => {
+        // remove from DOM
+        ele.outerHTML = "";
+      }, 2000);
+    }
     // this.authenticate().then(() => {
     //   const ele = document.getElementById('ipl-progress-indicator');
     //   if(ele){
@@ -51,8 +53,8 @@ class App extends Component {
     // })
   }
 
-  authenticate(){
-    return new Promise(resolve => setTimeout(resolve, 2000))
+  authenticate() {
+    return new Promise(resolve => setTimeout(resolve, 2000));
   }
 
   showNav() {
@@ -60,7 +62,7 @@ class App extends Component {
   }
 
   turnOffNav() {
-    this.setState({ navShow: false});
+    this.setState({ navShow: false });
   }
 
   render() {
@@ -71,27 +73,52 @@ class App extends Component {
           <Route
             path="/"
             exact
-            render={routeProps => <Landing {...routeProps} turnOffNav={this.turnOffNav} />}
+            render={routeProps => (
+              <Landing {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
           />
           <Route
             path="/about"
-            render={routeProps => <About {...routeProps} turnOffNav={this.turnOffNav} />}
+            render={routeProps => (
+              <About {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
           />
           <Route
             path="/events"
-            render={routeProps => <Events {...routeProps} turnOffNav={this.turnOffNav} />}
+            render={routeProps => (
+              <Events {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
           />
           <Route
             path="/news"
-            render={routeProps => <NewsFeed {...routeProps} turnOffNav={this.turnOffNav} />}
+            render={routeProps => (
+              <NewsFeed {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
           />
           <Route
-            path="/videos"
-            render={routeProps => <Videos {...routeProps} turnOffNav={this.turnOffNav} />}
+            path="/gallery"
+            render={routeProps => (
+              <Gallery {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
           />
           <Route
             path="/members"
-            render={routeProps => <Members {...routeProps} turnOffNav={this.turnOffNav} />}
+            render={routeProps => (
+              <Members {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
+          />
+          <Route
+            path="/event/:eventID"
+            render={routeProps => (
+              <SingleEvent {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
+          />
+
+          <Route
+            path="/newsfeed/:newsfeedID"
+            render={routeProps => (
+              <SingleNewsFeed {...routeProps} turnOffNav={this.turnOffNav} />
+            )}
           />
           {/* <Route exact path="/" component={Landing} /> */}
           {/* <Route exact path="/about" component={About} /> */}

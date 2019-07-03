@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 class About extends Component {
   render() {
     return (
-      <div className="section-about">
+      <section className="section-about">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -48,7 +48,7 @@ class About extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

@@ -60,8 +60,8 @@ class navigation extends Component {
               </NavLink>
             </li>
             <li className="navigation__item">
-              <NavLink to="/videos" className="navigation__link">
-                <span>05 </span>Videos
+              <NavLink to="/gallery" className="navigation__link">
+                <span>05 </span>Gallery
               </NavLink>
             </li>
             <li className="navigation__item">

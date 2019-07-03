@@ -11,12 +11,12 @@ import Booking from "./Booking";
 
 class Landing extends Component {
 
-  componentDidMount() {
+  componentWillUnmount() {
     this.props.turnOffNav();
   }
   render() {
     return (
-      <div>
+      <main>
         <Carousel />
         <Info />
         <About />
@@ -26,7 +26,7 @@ class Landing extends Component {
         <LatestVideos />
         <LatestEvents />
         <Booking />
-      </div>
+      </main>
     );
   }
 }

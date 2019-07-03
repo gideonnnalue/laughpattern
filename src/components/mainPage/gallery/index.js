@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import PageHeader from "../../utils/PageHeader";
+import ImageGallery from "./ImageGallery";
 
-class index extends Component {
+class Gallery extends Component {
 
   componentWillUnmount() {
     this.props.turnOffNav();
@@ -10,10 +11,11 @@ class index extends Component {
   render() {
     return (
       <div>
-        <PageHeader title="Members" />
+        <PageHeader title="Gallery" />
+        <ImageGallery />
       </div>
     );
   }
 }
 
-export default index;
+export default Gallery;

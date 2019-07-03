@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const Company = () => {
   return (
-    <div className="section-about-company">
+    <section className="section-about-company">
       <div className="container">
         <div className="row">
           <div className="col">
@@ -65,7 +65,7 @@ const Company = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

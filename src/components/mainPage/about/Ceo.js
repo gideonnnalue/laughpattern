@@ -6,7 +6,7 @@ import img from "../../../assets/images/img.jpg";
 
 const Ceo = () => {
   return (
-    <div className="section-about-ceo">
+    <section className="section-about-ceo">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
@@ -38,7 +38,7 @@ const Ceo = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

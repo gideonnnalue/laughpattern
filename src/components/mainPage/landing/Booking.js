@@ -6,7 +6,7 @@ import InputTextAreaGroup from "../../utils/InputTextAreaGroup";
 class Booking extends Component {
   render() {
     return (
-      <div className="section-booking">
+      <section className="section-booking">
         <div className="container">
           <h3 className="heading heading-primary py-5">Booking</h3>
           <div className="row justify-content-center pt-5">
@@ -52,7 +52,7 @@ class Booking extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

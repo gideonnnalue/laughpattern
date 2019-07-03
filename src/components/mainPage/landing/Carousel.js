@@ -106,11 +106,11 @@ class Carousel extends Component {
       <CarouselHeader key={i} image={item.img} heading={item.heading} desc={item.desc} />
     ))
     return (
-      <div className="carousel__wrapper">
+      <section className="carousel__wrapper">
         <Slider {...settings}>
           {items}
         </Slider>
-      </div>
+      </section>
     );
   }
 }

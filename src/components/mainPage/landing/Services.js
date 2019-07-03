@@ -93,7 +93,7 @@ class Services extends Component {
       />
     ));
     return (
-      <div className="section-services">
+      <section className="section-services">
         <div className="container">
           <h3 className="heading heading-primary my-5">
             <Flip bottom cascade>
@@ -104,7 +104,7 @@ class Services extends Component {
             <Slider {...settings}>{service}</Slider>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
